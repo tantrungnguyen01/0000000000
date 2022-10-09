@@ -1,0 +1,107 @@
+footer {
+    background: #000;
+}
+
+.footer-wrapper {
+    padding: 50px 0;
+    border-top: .1rem solid var(--help-text-color);
+    flex-wrap: wrap;
+}
+
+.footer-left .subcribe-text {
+    margin-right: 50px;
+}
+
+.footer-left .subcribe-text h3 {
+    color: #fff;
+}
+
+.footer-left .subcribe-text p {
+    font-size: 1.4rem;
+    color: var(--help-text-color);
+}
+
+.subcribe-input input {
+    width: 100%;
+}
+
+.footer-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-icons li {
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.footer-icons li a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    transition: .4s;
+    text-decoration: none;
+
+
+}
+
+.footer-icons li:nth-child(1) a:hover {
+    background: rgb(134, 63, 248);
+}
+
+.footer-icons li:nth-child(2) a:hover {
+    background: aqua;
+}
+
+.footer-icons li:nth-child(3) a:hover {
+    background: rgb(255, 166, 0);
+}
+
+.app-btn.secondary {
+    background: #222529;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 10px;
+}
+
+.app-input {
+    height: 100%;
+    display: block;
+    padding: 1.25rem 3.1rem;
+    outline: none;
+    border: none;
+
+}
+
+.loterria .check-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px 5px;
+
+}
+
+.loterria.active .check-btn {}
+
+.loterria.active .check-btn::before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0 !important;
+}

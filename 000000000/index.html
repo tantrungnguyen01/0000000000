@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <link rel="stylesheet" href="assest/libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d9876ed7d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assest/css/header.css">
+    <link rel="stylesheet" href="/assest/css/main.css">
+    <link rel="stylesheet" href="/assest/css/home.css">
+    <link rel="stylesheet" href="/assest/css/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <template id="filtertemplate">
+
+        <li class="loterria catery d-flex align-items-center">
+            <div class="check-btn"></div>
+            <span></span>
+        </li>
+
+    </template>
+
+    <!-- <template id="productTemplate">
+        <div class="products__list--product">
+            <div class="product-image">
+                <img class="" src="assest/img/g-star-raw-kate-boyfriend-jeans-grey.avif" alt="">
+                <div class="product__image--cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+                <div class="product__image--view">
+                    <a href="poopy-tab.html" class="btn btn-primary postlink">BUY</a>
+                </div>
+            </div>
+            <div class="product__content ">
+                <div class="product__content--category d-flex justify-content-between mb-3">
+                    <a href="#">Light Hunter</a>
+                    <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <p class="name">Multi Pocket Sweatpants</p>
+                <div class="d-flex star mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$129.00</p>
+            </div>
+        </div>
+    </template> -->
+
+    <header class="header ">
+        <nav class="header-nav fixed-top  ">
+            <div class="contai d-flex justify-content-center justify-content-between align-items-centers">
+                <div class="nav-wrapper d-flex justify-content-between align-items-center  ">
+                    <div class="icon  ">
+                        <div class="toggle  d-flex align-items-centers">
+                            <i class=" fa-solid fa-bars bars"></i>
+                            <i class="fa-solid fa-xmark close"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="nav-logo">
+                        <img class="img" src="/assest/img/logo-removebg-preview.png" alt="">
+                    </div>
+
+
+                    <div class="navbar ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Avarrivals</a>
+                        </li>
+                    </div>
+                </div>
+
+
+
+                <div class="nav-icon-r d-flex align-items-center">
+                    <div class="icon-heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="cart icon-shopping">
+                        <i class="fa-solid fa-xmark closse"></i>
+                        <i class="fa-solid fa-bag-shopping oppen "></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div class="card-section">
+            <div class="card-wrapper">
+                <h3>Shopping</h3>
+                <div class="Product">
+
+                </div>
+                <div class="cart-total d-flex justify-content-between fw-bold text-secondary">
+                    <p>TOTAL:</p>
+                    <p>$ <span class="total-price">123.00</span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+    <nav class="nav-mobile">
+        <div class="contan">
+            <form class="d-flex my-4">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="nav-mobile-link">
+
+                <li class="nav-mobile-item"><a class="bb " href="#">Spotlight</a></li>
+                <li class="nav-mobile-item"><a class="bb " href="#">SFX</a></li>
+                <li class="nav-mobile-item"><a class="bb" href="#">Foottage</a></li>
+                <li class="nav-mobile-item"><a class="bb" href="#">Help?</a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+
+    <main>
+        <section id="banner" class="carousel-wrapper">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <div class="banner__carousel--action active" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0">
+                    </div>
+                    <div class="banner__carousel--action" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1">
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assest/img/308836942_10167433518570389_2590420989573566784_n.jpg"
+                            class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block banner__caption caption-left">
+                            <h1>DENIM DAYS 20% OFF JEANS</h1>
+                            <div class="banner__caption--action">
+                                <button class="app-btn">Shop Men</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assest/img/309259512_10167440613965389_5458129936497248248_n.jpg"
+                            class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block banner__caption caption-right">
+                            <h1>WOMEN'S ALL ITEMS </h1>
+                            <div class="banner__caption--action ">
+                                <button class="app-btn">Shop Women</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 colum filter-border position-relative ">
+                        <div class="product-filter productt ">
+                            <h4>SORT BY</h4>
+                            <ul class="caterogis tag ">
+                                <!-- <li class="caterogy catery d-flex align-items-center">
+                                    <div class="check-btn"></div>
+                                    <span class="tag tagg">ALL</span>
+                                </li>
+                                <li class="caterogy catery d-flex align-items-center">
+                                    <div class="check-btn"></div>
+                                    <span class="tag tagg">MEN</span>
+                                </li>
+                                <li class="caterogy catery d-flex align-items-center">
+                                    <div class="check-btn"></div>
+                                    <span class="tag tagg">WOMEN</span>
+                                </li>
+                                <li class="caterogy catery d-flex align-items-center">
+                                    <div class="check-btn"></div>
+                                    <span class="tag tagg">UNISEX</span>
+                                </li>
+                                <li class="caterogy catery d-flex align-items-center">
+                                    <div class="check-btn"></div>
+                                    <span class="tag tagg">NEW ARRIVALS</span>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-10 colum">
+
+                        <div
+                            class="products__list--product products-lit products__list d-flex flex-wrap justify-content-between">
+                            <div class="products__list products__list--product post">
+                                <div class="product__image">
+                                    <img class="imgg imageUrl"
+                                        src="assest/img/g-star-raw-kate-boyfriend-jeans-grey.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <a href="poopy-tab.html" class="btn btn-primary postlink">BUY</a>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div>
+                            </div> -->
+                             <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-unisex-field-liner-jacket-purple.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Dark Taupe Fungi</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Unisex Field Liner Jacket</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$179.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-kate-boyfriend-jeans-grey.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Magma cobler</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Kate Boyfriend Jeans</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$110.00</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-premium-core-20-sweat-pants-red.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Cersie</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Premium core 2.0 Sweat Pants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$79.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-weld-high-skinny-chino-grey.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Asfalt Garment Dyed</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Weld High Skinny Chino</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$119.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-effo-scarf-text-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Dark Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Effo Scarf Text</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$69.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-text-print-beanie-multi-color-model.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">dk black/asfalt htr</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Text Print Beanie</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$39.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-cart-iii-perforated-logo-slides-white-both-shoes.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">offwhite</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Cart III Perforated Logo Slides</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$39.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-cart-iii-tonal-slides-multi-color-side-view.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">ochre/black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Cart III Tonal Slides</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$59.33</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-mysid-mid-knit-zip-boots-black-side-view.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Mysid Mid Knit Zip Boots</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$179.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-kerllie-ii-mid-nylon-boots-black-side-view.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Kerllie II Mid Nylon Boots</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$279.00</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-unisex-attac-utility-pm-vest-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Dark Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Unisex Attac Utility PM Vest</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$179.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-lhana-skinny-jeans-dark-blue.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">antique forest blue restored</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Lhana Skinny Jeans</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$139.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-moto-leather-jacket-brown.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Magma cobler</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Moto Leather Jacket</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$399.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-chino-relaxed-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Cavier</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Chino Relaxed</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$279.00</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-weld-high-skinny-chino-brown.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Nett Brown</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Weld High Skinny Chino</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$99.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-arc-3d-boyfriend-jeans-black.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Pitch Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Arc 3D Boyfriend Jeans</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$95.96</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-deck-ultra-high-wide-leg-jeans-medium-blue.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">antique faded space blue</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Deck Ultra High Wide Leg Jeans</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-padded-drawstring-bomber-dark-blue.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Indigo</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Magma cobler</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Padded Drawstring Bomber</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$189.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-bronson-mid-waist-slim-chino-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Raw Denim Pressed</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Bronson Mid Waist Slim Chino</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$99.80</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-rib-collar-regular-shirt-black.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Magma cobler</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Rib Collar Regular Shirt</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$99.00</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-multi-layer-originals-hooded-sweater-purple.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Dark Taupe Fungi</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Layer Originals Hooded Sweater</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$99.00</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-relaxed-tapered-cargo-pants-brown.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Turf</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Relaxed Tapered Cargo Pants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$149.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg"
+                                        src="assest/img/g-star-raw-meefic-squared-quilted-hooded-jacket-multi-color.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">reflective sea blue</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Meefic Squared Quilted Hooded Jacket</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$189.95</p>
+                                </div>
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="imgg" src="assest/img/g-star-raw-relaxed-tapered-cargo-pants-black.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <span>Quick View</span>
+                                    </div>
+                                </div>
+                                <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Dark Black</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Relaxed Tapered Cargo Pants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$149.95</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <button class="app-btn ouline">Load More</button>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="visitor-infor">
+            <div class="container">
+                <div class="overlay"></div>
+                <div class="heading text-center mx-auto">
+                    <h1 class="test">The best license for every video creator</h1>
+                    <h3 class="test">From YouTube monetization to commercial use worldwide, we've got the right
+                        plan for you</h3>
+
+                </div>
+                <div class="visitor-content  text-center py-4">
+                    <div class="container">
+                        <h1 class="content">Explore New Arrivals</h1>
+
+                        <div
+                            class="my-slider products__list  align-items-center  d-flex flex-wrap justify-content-between">
+                            <div class="products__list--product  my-slider ">
+                                <div class="product__image">
+                                    <img class="img2 imageUrl "
+                                        src="assest/img/g-star-raw-arc-3d-boyfriend-jeans-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="img2"
+                                        src="assest/img/g-star-raw-cart-iii-tonal-slides-multi-color-side-view.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="img2" src="assest/img/g-star-raw-effo-scarf-text-black.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="img2" src="assest/img/g-star-raw-moto-leather-jacket-brown.avif" alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="img2" src="assest/img/g-star-raw-multi-pocket-sweatpants-green.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+
+                            </div>
+                            <div class="products__list--product">
+                                <div class="product__image">
+                                    <img class="img2"
+                                        src="assest/img/g-star-raw-multi-layer-originals-hooded-sweater-purple.avif"
+                                        alt="">
+                                    <div class="product__image--cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+
+                                    <div class="product__image--view">
+                                        <!-- <span>Quick View</span> -->
+                                    </div>
+
+                                </div>
+                                <!-- <div class="product__content ">
+                                    <div class="product__content--category d-flex justify-content-between mb-3">
+                                        <a href="#">Light Hunter</a>
+                                        <div class="icon">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="name">Multi Pocket Sweatpants</p>
+                                    <div class="d-flex star mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="price">$129.00</p>
+                                </div> -->
+
+                            </div>
+
+                            <!-- <button class="previous button" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="next button" onclick="plusDivs(1)">&#10095;</button> -->
+
+                            <!-- <button class="previous slick-prev  button">&#10094;</button>
+                            <button class="next slick-next button">&#10095;</button> -->
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="footer-wrapper d-flex justify-content-between align-items-center">
+                <div class="footer-left d-flex align-items-center">
+                    <div class="subcribe-text">
+                        <h3>Subcribe Newsletter</h3>
+                        <p>Get all the latest information on Events, Sales and Offers. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foodd">
+                <div class="subcribe-input">
+                    <form class="d-flex">
+                        <input type="text" class="app-input" placeholder="Email address">
+                        <button type="submit" class="app-btn secondary">
+                            Subcribe
+                        </button>
+                    </form>
+                </div>
+                <div class="footer-right">
+                    <ul class="footer-icons d-flex">
+                        <li><a href=""><i class="fa-brands fa-reddit-alien"></i></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook-messenger"></i></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="/assest/libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="/assest/js/main.mjs"></script>
+    <script src="/assest/libs/jquery-3.6.1.min.js"></script>
+    <script type="module" src="/assest/js/slicksilder.js"></script>
+    <script src="/assest/js/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <!-- <script type="module">
+        var slider = tns({
+
+            container: "my-slider",
+            mode: "gallery",
+            items: 2,
+            animateIn: "jello",
+            animateOut: "rollOut",
+            speed: 1000,
+            swipeAngle: false
+
+
+
+
+        });
+    </script> -->
+</body>
+
+</html>
